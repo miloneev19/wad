@@ -1,0 +1,17 @@
+docker file code :
+     FROM node:alphine
+     COPY ./partb
+     CMD node/partb/milonee.js
+
+milonee.js:
+   console.log("Hi");
+    console.log("He4llo";
+   console.log("Namaste");
+
+
+terminal : 
+   cd partb 
+   docker --version 
+   node milonee.js
+   docker build -t partb .
+   docker images 

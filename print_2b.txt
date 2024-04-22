@@ -1,0 +1,53 @@
+Lab 2b
+
+PS D:\WAD_SEM6\lab2b> docker --version
+Docker version 25.0.3, build 4debf41
+PS D:\WAD_SEM6\lab2b> node milonee.js 
+function, script file, or operable program. Check the spelling of the   
+name, or if a path was included, verify that the path is correct and    
+try again.
+At line:1 char:1
++ node milonee.js
++ ~~~~
+   dNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS D:\WAD_SEM6\lab2b> docker build -t lab2b
+ERROR: "docker buildx build" requires exactly 1 argument.
+See 'docker buildx build --help'.
+
+Usage:  docker buildx build [OPTIONS] PATH | URL | -
+
+Start a build
+PS D:\WAD_SEM6\lab2b> docker build -t lab2b .
+[+] Building 23.1s (7/7) FINISHED                        docker:default
+ => [internal] load build definition from Dockerfile               0.3s
+ => => transferring dockerfile: 98B                                0.0s
+ => [internal] load metadata for docker.io/library/node:alpine     5.7s
+ => [internal] load .dockerignore                                  0.1s
+ => => transferring context: 2B                                    0.0s 
+ => [internal] load build context                                  0.1s
+ => => transferring context: 253B                                  0.0s 
+ => [1/2] FROM docker.io/library/node:alpine@sha256:ad255c65652e  16.6s 
+ => => resolve docker.io/library/node:alpine@sha256:ad255c65652e8  0.1s 
+ => => sha256:ad255c65652e8e99ce0b9d9fc52eee3eae8 1.43kB / 1.43kB  0.0s
+ => => sha256:ed4880bea0d76e280073698d18ebd056e79 1.16kB / 1.16kB  0.0s
+ => => sha256:fe4fca1c47e362ffc585b9f83c2e33e91fa 7.18kB / 7.18kB  0.0s 
+ => => sha256:4abcf20661432fb2d719aaf90656f55c287 3.41MB / 3.41MB  3.7s 
+ => => sha256:801a10a1487c13c1f234891b6beccf24 43.94MB / 43.94MB  11.8s 
+ => => sha256:ca8c7c1da43dc6eff39387121c9bd54bdd7 2.37MB / 2.37MB  3.0s 
+ => => sha256:be06cbbaf4a2b70b58ee68be7cac20a126125ab 452B / 452B  4.1s 
+ => => extracting sha256:4abcf20661432fb2d719aaf90656f55c287f8ca9  1.3s 
+ => => extracting sha256:801a10a1487c13c1f234891b6beccf24f9ae9102  4.1s 
+ => => extracting sha256:be06cbbaf4a2b70b58ee68be7cac20a126125ab7  0.0s 
+ => [2/2] COPY . /lab2b                                            0.2s 
+ => exporting to image                                             0.1s 
+ => => exporting layers                                            0.0s 
+ => => writing image sha256:54b4ee07a94b19f3150df4b41b715ccc42881  0.0s 
+ => => naming to docker.io/library/lab2b                           0.0s 
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+PS D:\WAD_SEM6\lab2b> docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+lab2b        latest    54b4ee07a94b   48 seconds ago   141MB

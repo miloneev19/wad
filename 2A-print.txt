@@ -1,0 +1,30 @@
+Lab 2A
+
+PS D:\WAD_SEM6\Lab 2A> cd Part-A
+PS D:\WAD_SEM6\Lab 2A\Part-A> git --version
+git version 2.44.0.windows.1  
+PS D:\WAD_SEM6\Lab 2A\Part-A> git add .
+PS D:\WAD_SEM6\Lab 2A\Part-A> git status
+On branch master
+nothing to commit, working tree clean
+PS D:\WAD_SEM6\Lab 2A\Part-A> git remote add origin "https://github.com/miloneev19/WAD_lab2A.git"
+error: remote origin already exists.
+PS D:\WAD_SEM6\Lab 2A\Part-A> git commit -m "First Commit"
+On branch master
+nothing to commit, working tree clean
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 268 bytes | 268.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/miloneev19/WAD_lab2A.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS D:\WAD_SEM6\Lab 2A\Part-A> git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS D:\WAD_SEM6\Lab 2A\Part-A>
